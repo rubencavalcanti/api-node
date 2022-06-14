@@ -1,0 +1,22 @@
+{
+  "name": "api-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RUD3VS/api-node.git"
+  },
+  "author": "ruben cavalcanti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RUD3VS/api-node/issues"
+  },
+  "homepage": "https://github.com/RUD3VS/api-node#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
