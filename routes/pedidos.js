@@ -10,10 +10,15 @@ router.get("/", (req, res, next) => {
 
 //insere um pedido
 router.post("/", (req, res, next) => {
-  res.status(201).send({
-    mensagem: "o pedido foi criado",
+    const pedido = {
+      id_produto: req.body.id_produto,
+      quantidade: req.body.quantidade
+    };
+    res.status(201).send({
+      mensagem: "insere um pedido",
+      produtoCriado: pedido
+    });
   });
-});
 
 //retorna os dados deu um pedido
 router.get("/:id_pedidos", (req, res, next) => {

@@ -4,14 +4,19 @@ const router = express.Router();
 //retorna todos os produtos
 router.get("/", (req, res, next) => {
   res.status(200).send({
-    mensagem: "Usando o Post dentro da rota de produtos",
+    mensagem: "Usando o get dentro da rota de produtos",
   });
 });
 
 //insere um produto
 router.post("/", (req, res, next) => {
+  const produto = {
+    nome: req.body.nome,
+    preco: req.body.preco
+  };
   res.status(201).send({
-    mensagem: "Usando o Post dentro da rota de produtos",
+    mensagem: "insere um produto",
+    produtoCriado: produto,
   });
 });
 
