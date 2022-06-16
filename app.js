@@ -31,7 +31,7 @@ app.use((req, res, next) => {
 app.use('/produtos' , rotaProdutos);
 app.use('/pedidos' , rotaPedidos);
 
-// quando não encontra rota entrar aqui
+// quando não encontra rota entrar aqui - tratamento de erros
 app.use((req, res, next) => {
     const erro = new Error('não encontrado');
     erro.status = 404;
